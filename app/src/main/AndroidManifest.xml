@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    <uses-feature-->
+<!--        android:name="android.hardware.telephony"-->
+<!--        android:required="false" />-->
+
+<!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>-->
+<!--    <uses-permission android:name="android.permission.SEND_SMS"/>-->
+<!--    <uses-permission android:name="android.permission.READ_SMS"/>-->
+<!--    <uses-permission android:name="android.permission.RECEIVE_SMS"/>-->
+<!--    <uses-permission android:name="android.permission.READ_CONTACTS"/>-->
+
+
+
+<!--    Manifest.permission.SEND_SMS,                  // Send SMS messages-->
+<!--    Manifest.permission.READ_SMS,                  // Read SMS messages-->
+<!--    Manifest.permission.RECEIVE_SMS,               // Receive SMS messages-->
+<!--    Manifest.permission.READ_CONTACTS,             // Read contacts-->
+<!--    Manifest.permission.WRITE_CONTACTS,            // Write contacts-->
+<!--    Manifest.permission.ACCESS_FINE_LOCATION,      // Get fine location (GPS)-->
+<!--    Manifest.permission.ACCESS_COARSE_LOCATION,    // Get coarse location-->
+<!--    Manifest.permission.CAMERA,                    // Access camera-->
+<!--    Manifest.permission.RECORD_AUDIO,              // Access microphone-->
+<!--    Manifest.permission.WRITE_EXTERNAL_STORAGE,    // Write to external storage-->
+<!--    Manifest.permission.INSTALL_PACKAGES,          // Install apps (very dangerous)-->
+<!--    Manifest.permission.CHANGE_WIFI_STATE,         // Control WiFi state-->
+<!--    Manifest.permission.ACCESS_NETWORK_STATE,      // Access network state-->
+<!--    Manifest.permission.BLUETOOTH_ADMIN,           // Control Bluetooth-->
+<!--    Manifest.permission.MODIFY_AUDIO_SETTINGS,     // Modify audio settings-->
+<!--    Manifest.permission.SYSTEM_ALERT_WINDOW-->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BahyAntivirus"
+        tools:targetApi="31">
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

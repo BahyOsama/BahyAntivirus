@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    tools:context=".SettingsActivity">
+
+    <!-- Settings Title -->
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Auto Scan Toggle -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchAutoScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Auto-Scan"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Enable Root Check Toggle -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchRootCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Root Check"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Settings"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>
